@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...) {
     i <- x$getInverse()   # Check to see of inverse is already cached
     if (!is.null(i)){     # If so, return it and exit.
         message("Getting cached matrix...")
-        return(i) # This line exists the function if the inverse was cached.
+        return(i) 
     }
     
     data <- x$get()   # Read the matrix 
